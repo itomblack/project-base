@@ -45,7 +45,7 @@ gulp.task( 'server', function() {
 
 // jshint
 gulp.task( 'jshint', function() {
-  gulp.src( path.js )
+  gulp.src( 'src/js/*.js' )
     .pipe( jshint() )
     .pipe( jshint.reporter( stylish ) );
 });
@@ -56,7 +56,7 @@ gulp.task( 'jshint', function() {
 gulp.task( 'watch', function(done) {
   var lrServer = gulpLivereload();
 
-  gulp.watch( [path.destHtml, path.destJs, path.distCss + '/**/*.css' ] )
+  gulp.watch( [path.destHtml, path.destJs, path.sass ] )
     .on( 'change', function( file ) {
       lrServer.changed( file.path );
     });
