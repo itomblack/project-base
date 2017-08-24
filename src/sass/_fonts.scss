@@ -1,3 +1,31 @@
 //===============================================================================
 // FONTS
 //===============================================================================
+body, html {
+	font-family: 'Montserrat', sans-serif;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'neuzeit-grotesk', sans-serif;	
+}
+
+h1 {
+	font-size: 76px;
+	line-height: 91px;
+	letter-spacing: 4px;
+	margin: 24px 0;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 32px;
+	letter-spacing: 2px;
+	font-weight: 300;
+}
+
+p {
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
